@@ -1,0 +1,6 @@
+{
+  "name": "Daily Calorie & Water Tracker",
+  "description": "A delightful, skeuomorphic offline-first daily calorie and water journal with AI-powered food photo analysis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-handwritten: "Caveat", cursive;
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Custom journal ruled paper design */
+.journal-paper {
+  background-color: #f7f4eb;
+  background-image: linear-gradient(#e1dcd0 1px, transparent 1px);
+  background-size: 100% 2.2rem;
+  line-height: 2.2rem;
+}
+
+/* Custom tea/vintage staining */
+.stained-paper {
+  background: radial-gradient(circle at 10% 20%, rgba(244, 237, 222, 0.95) 0%, rgba(240, 230, 210, 0.98) 50%, rgba(230, 218, 195, 1) 100%);
+  box-shadow: inset 0 0 40px rgba(139, 115, 85, 0.15), 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Hard leather spine */
+.leather-spine {
+  background: linear-gradient(to right,
+    #3e2723 0%,
+    #4e342e 20%,
+    #5d4037 40%,
+    #3e2723 60%,
+    #2c1510 80%,
+    #1b0a07 100%
+  );
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), inset -2px 0 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Timber texture fallback */
+.wooden-desk {
+  background-color: #1e110c;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(30, 17, 12, 0.8) 0%, rgba(10, 5, 3, 0.95) 100%),
+    repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.01) 0px, rgba(255, 255, 255, 0.01) 2px, transparent 2px, transparent 100px),
+    repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.05) 0px, rgba(0, 0, 0, 0.05) 4px, transparent 4px, transparent 80px);
+}
+
+/* Skeuomorphic steel binder rings */
+.binder-ring {
+  background: linear-gradient(to right, #9e9e9e 0%, #ffffff 30%, #757575 70%, #424242 100%);
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.5), inset 0 1px 1px rgba(255,255,255,0.8);
+}
+
+/* Custom scrollbar for skeuomorphic paper sections */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(139, 115, 85, 0.05);
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(139, 115, 85, 0.3);
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 115, 85, 0.5);
+}
+
+/* Eraser or ink scribble lines for checked or deleted tasks */
+.scribble-through {
+  position: relative;
+}
+.scribble-through::after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  top: 55%;
+  height: 3px;
+  background: rgba(43, 61, 79, 0.55);
+  border-radius: 4px;
+  transform: rotate(-1.5deg);
+}
+
+/* Ink effect */
+.ink-blue {
+  color: #1a365d;
+}
+.ink-dark {
+  color: #2d3748;
+}
+.ink-red {
+  color: #9b2c2c;
+}
+
+/* Paper clip skeuomorphism */
+.paper-clip {
+  background: linear-gradient(135deg, #cfd8dc 0%, #b0bec5 50%, #78909c 100%);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.5);
+}
